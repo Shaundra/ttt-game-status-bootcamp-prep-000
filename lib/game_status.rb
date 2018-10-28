@@ -31,10 +31,15 @@ def full?(board)
 end
 
 def draw?(board)
-  
+  if won?(board) || (full?(board) == false && won?(board) == false)
+    false
+  elsif won?(board) == false and full?(board)
+    true
+  end
 end
 
 def over?(board)
+  won?(board) || draw?(board) || full?(board) ? true : false
 end
 
 def winner?(baord)
