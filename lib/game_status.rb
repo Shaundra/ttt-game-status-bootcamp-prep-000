@@ -29,3 +29,13 @@ end
 def full?(board)
   board.none? { |position| position.strip.empty? }
 end
+
+def draw?(board)
+  
+end
+
+def over?(board)
+end
+
+def winner?(baord)
+end
