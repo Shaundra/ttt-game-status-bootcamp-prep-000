@@ -42,5 +42,5 @@ def over?(board)
   won?(board) || draw?(board) || full?(board) ? true : false
 end
 
-def winner?(baord)
+def winner?(board)
 end
