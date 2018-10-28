@@ -21,8 +21,7 @@ def won?(board)
         board[combo[0]].strip == board[combo[2]].strip &&
         !(board[combo[0]].strip.empty?))
       return combo
-    else
-      return false
     end
   end
+  false
 end
